@@ -1,0 +1,31 @@
+Typescript
+
+npm i -g typescript
+ to install typescript globally use git bash
+
+tsc --version
+ turns thing from typescript into javascript
+
+typescript may be useful information if going to work for kroger
+
+packages need to be installed in order to run the application,
+especially when pushing and pulling from github
+npm install in the root folder
+
+using typescript you can apply a type to these,
+greg wants us to always do this while using typescript
+(a: number)
+variables properties and parameters
+add = (a:n, b:n):n 
+    says it adds numbers together, and returns a number
+when using typescript the web wont be able to read it,
+so you have to turn it into a js file so it can be read
+in terminal, cd into js, and do tsc index.ts, creates js version of ts
+
+tsc --init loads tsconfig.json file
+to make js from ts show up in another folder, allow outDir in tsconfig.json
+to root to "./js", and then insert "include": ["./ts/**/*.ts"] after 2nd closing brace
+and then insert tsc into terminal to run command and js will be loaded into js folder
+
+tsc -w sets a watch so it changes globally, kind of like html to a web browser going live
+ctrl c in the terminal brings back gitbash
